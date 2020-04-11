@@ -22,7 +22,7 @@ namespace Konyvtar_Pult_Client
     /// </summary>
     public partial class MainWindow : Window
     {
-        private IList<Book> _books;
+        
 
         public MainWindow()
         {
@@ -31,7 +31,8 @@ namespace Konyvtar_Pult_Client
 
         private void SearcForBooks_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new SearchForBooksWindow();
+            window.ShowDialog();
 
         }
 
@@ -43,12 +44,6 @@ namespace Konyvtar_Pult_Client
 
         private void AddBooks_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void UpdateBooks()
-        {
-            var book = BookDataProvider.GetBooks();
 
         }
     }

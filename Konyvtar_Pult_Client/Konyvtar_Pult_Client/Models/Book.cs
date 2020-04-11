@@ -18,7 +18,16 @@ namespace Konyvtar_Pult_Client.Models
 
         public override string ToString()
         {
-            return $"{Title} {Author} {AvailableQuantity} {Quantity} {ReplacementCost}";
+            StringBuilder sb = new StringBuilder();
+            int TitleHossz = Title.Length;
+            int spacek = 40 - TitleHossz;
+            sb.Append(Title);
+            for (int i = 0; i < spacek; i++)
+            {
+                sb.Append(" ");
+            }
+            sb.Append(Author);
+            return sb.ToString();
         }
         
     }
