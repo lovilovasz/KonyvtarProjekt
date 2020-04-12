@@ -24,6 +24,7 @@ namespace Konyvtar_Pult_Client
     {
         public IList<Book> booksToShow = new List<Book>();
         private IList<Book> _books;
+        private Book _selectedBook;
         public SearchForBooksWindow()
         {
             InitializeComponent();
@@ -36,12 +37,21 @@ namespace Konyvtar_Pult_Client
 
         private void BookListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var selectedBook = BookListBox.SelectedItem as Book;
 
+            if (selectedBook != null)
+            {
+                _selectedBook = selectedBook;
+            }
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            BookDataProvider.DeleteBook(_selectedBook.Id);
         }
 
         private void UpdateBooks()
-        {
-            
+        {           
             _books = BookDataProvider.GetBooks();
             string Title = TitleTextBox.Text.ToLower();
             string Author = AuthorTextBox.Text.ToLower();
@@ -72,6 +82,8 @@ namespace Konyvtar_Pult_Client
             }
             BookListBox.ItemsSource = "";
             BookListBox.ItemsSource = booksToShow;            
-        }     
+        }
+
+       
     }
 }
