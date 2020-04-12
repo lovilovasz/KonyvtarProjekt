@@ -28,6 +28,8 @@ namespace Konyvtar_Pult_Client
         public SearchForBooksWindow()
         {
             InitializeComponent();
+            IList<Book> konyvek = BookDataProvider.GetBooks();
+            BookListBox.ItemsSource = konyvek;
         }
         private void Search_Click(object sender, RoutedEventArgs e)
         {
