@@ -39,12 +39,15 @@ namespace Konyvtar_Pult_Client
 
         private void SearcForPatrons_Click(object sender, RoutedEventArgs e)
         {
+            var window = new SearchForPatrons();
+            window.ShowDialog();
 
         }
 
         private void AddBooks_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new AddBookWindow();
+            window.ShowDialog();
         }
     }
 }

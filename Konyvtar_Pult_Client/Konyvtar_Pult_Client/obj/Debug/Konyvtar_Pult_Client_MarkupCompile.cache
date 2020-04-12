@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\App.xaml
-3-1544317279
+5-392729251
 
-10-902853588
+12-843363750
 15-594168309
-MainWindow.xaml;SearchForBooksWindow.xaml;UpdateBookWindow.xaml;
+AddBookWindow.xaml;MainWindow.xaml;SearchForBooksWindow.xaml;SearchForPatrons.xaml;UpdateBookWindow.xaml;
 
 False
 

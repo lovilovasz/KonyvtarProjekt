@@ -19,3 +19,7 @@ F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvt
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\SearchForBooksWindow.baml
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\UpdateBookWindow.g.cs
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\UpdateBookWindow.baml
+F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\SearchForPatrons.g.cs
+F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\SearchForPatrons.baml
+F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\AddBookWindow.g.cs
+F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\AddBookWindow.baml
