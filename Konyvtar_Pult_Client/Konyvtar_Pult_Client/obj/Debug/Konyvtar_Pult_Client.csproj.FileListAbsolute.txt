@@ -17,3 +17,5 @@ F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvt
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\Konyvtar_Pult_Client.pdb
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\SearchForBooksWindow.g.cs
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\SearchForBooksWindow.baml
+F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\UpdateBookWindow.g.cs
+F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\obj\Debug\UpdateBookWindow.baml

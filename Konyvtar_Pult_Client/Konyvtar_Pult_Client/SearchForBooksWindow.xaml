@@ -49,7 +49,7 @@
                     <ColumnDefinition Width="150*"/>
                     <ColumnDefinition Width="150*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="Update" Content="Update" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="250" Height="50" Background="#FF253031" Foreground="#C6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" >
+                <Button x:Name="Update" Content="Update" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="250" Height="50" Background="#FF253031" Foreground="#C6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" Click="Update_Click" >
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="30"/>
