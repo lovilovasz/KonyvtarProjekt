@@ -63,7 +63,11 @@ namespace Konyvtar_Pult_Client
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            BookDataProvider.DeleteBook(_selectedBook.Id);
+            var result = MessageBox.Show("Do you really want to delete this book?", "", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes)
+            {
+                BookDataProvider.DeleteBook(_selectedBook.Id);
+            }        
         }
 
         private void UpdateBooks()
@@ -95,9 +99,20 @@ namespace Konyvtar_Pult_Client
             { 
                     Console.WriteLine("Nincs találat!");
                     MessageBox.Show("No books found", "", MessageBoxButton.OK);
+                BookListBox.ItemsSource = "";
+                BookListBox.ItemsSource = _books;
             }
-            BookListBox.ItemsSource = "";
-            BookListBox.ItemsSource = booksToShow;            
+            else if(message1 == true)
+            {
+                BookListBox.ItemsSource = "";
+                BookListBox.ItemsSource = _books;
+            }
+            else
+            {
+                BookListBox.ItemsSource = "";
+                BookListBox.ItemsSource = booksToShow;
+            }
+                        
         }
 
         
