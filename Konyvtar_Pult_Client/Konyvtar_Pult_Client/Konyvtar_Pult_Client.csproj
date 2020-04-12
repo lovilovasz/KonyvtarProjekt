@@ -62,6 +62,9 @@
     <Compile Include="SearchForBooksWindow.xaml.cs">
       <DependentUpon>SearchForBooksWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UpdateBookWindow.xaml.cs">
+      <DependentUpon>UpdateBookWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +79,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SearchForBooksWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateBookWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

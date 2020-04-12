@@ -45,6 +45,20 @@ namespace Konyvtar_Pult_Client
             }
         }
 
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            if(_selectedBook != null)
+            {
+                var window = new UpdateBookWindow(_selectedBook);
+                window.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Choose a book from the list please!", "", MessageBoxButton.OK);
+            }
+            
+        }
+
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             BookDataProvider.DeleteBook(_selectedBook.Id);
@@ -84,6 +98,6 @@ namespace Konyvtar_Pult_Client
             BookListBox.ItemsSource = booksToShow;            
         }
 
-       
+        
     }
 }
