@@ -56,7 +56,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="250" Height="50" Background="#FF253031" Foreground="#C6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" Grid.Column="1">
+                <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="250" Height="50" Background="#FF253031" Foreground="#C6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" Grid.Column="1" Click="Delete_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="30"/>
