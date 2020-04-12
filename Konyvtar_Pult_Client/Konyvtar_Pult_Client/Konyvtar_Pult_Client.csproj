@@ -62,6 +62,7 @@
     <Compile Include="AddBookWindow.xaml.cs">
       <DependentUpon>AddBookWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\PatronWithTitle.cs" />
     <Compile Include="SearchForBooksWindow.xaml.cs">
       <DependentUpon>SearchForBooksWindow.xaml</DependentUpon>
     </Compile>

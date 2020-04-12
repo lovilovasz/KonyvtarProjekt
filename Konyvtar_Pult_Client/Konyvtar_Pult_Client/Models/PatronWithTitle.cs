@@ -6,17 +6,44 @@ using System.Threading.Tasks;
 
 namespace Konyvtar_Pult_Client.Models
 {
-    class PatronWithTitle
+    public class PatronWithTitle
     {
-        string Name { get; set; }
-        string CardNumber { get; set; }
-        string Title { get; set; }
+        public string Name { get; set; }
+        public string CardNumber { get; set; }
+        public DateTime ReturnDate { get; set; }
+        public string Title { get; set; }
 
-        public PatronWithTitle(string name, string cardNumber, string title)
+        public PatronWithTitle(string name, string cardNumber, string title, DateTime returnDate)
         {
             Name = name;
             CardNumber = cardNumber;
             Title = title;
+            ReturnDate = returnDate;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(" ").Append(Name);
+            int spacek = 15 - Name.Length;
+            for (int i = 0; i < spacek; i++)
+            {
+                sb.Append(" ");
+            }
+            sb.Append(CardNumber);
+            spacek = 18 - CardNumber.Length;
+            for (int i = 0; i < spacek; i++)
+            {
+                sb.Append(" ");
+            }
+            sb.Append(Title);
+            spacek = 25 - Title.Length;
+            for (int i = 0; i < spacek; i++)
+            {
+                sb.Append(" ");
+            }
+            sb.Append(ReturnDate.ToString());
+            return sb.ToString();
         }
     }
 }

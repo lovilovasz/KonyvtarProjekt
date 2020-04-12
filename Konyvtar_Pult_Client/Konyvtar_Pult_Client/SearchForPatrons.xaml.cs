@@ -22,7 +22,7 @@ namespace Konyvtar_Pult_Client
     public partial class SearchForPatrons : Window
     {
         private IList<Book> _book;
-        Patron _patron;
+        public PatronWithTitle _patron;
         public SearchForPatrons()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace Konyvtar_Pult_Client
 
         private void BookListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var PatronSelection = PatronListBox.SelectedItem as Patron;
+            var PatronSelection = PatronListBox.SelectedItem as PatronWithTitle;
             if(PatronSelection != null)
             {
                 _patron = PatronSelection;
@@ -55,7 +55,7 @@ namespace Konyvtar_Pult_Client
                 {
                     for (int j = 0; j < _book[i].patrons.Count; j++)
                     {
-                        if (_book[i].patrons[j] == _patron)
+                        if (_book[i].patrons[j].Name.Equals(_patron.Name) && (_book[i].patrons[j].CardNumber.Equals(_patron.CardNumber)) && (_book[i].patrons[j].ReturnDate.Equals(_patron.ReturnDate)))
                         {
                             book = _book[i];
                             csereSzam = j;
@@ -76,7 +76,7 @@ namespace Konyvtar_Pult_Client
 
         private void UpdatePatrons()
         {
-            List<Patron> _patron = new List<Patron>();
+            List<PatronWithTitle> _patron = new List<PatronWithTitle>();
             string name = NameTextBox.Text;
             string number = CardNOTextBox.Text;
             Console.WriteLine("Books: " + _book.Count);
@@ -95,7 +95,7 @@ namespace Konyvtar_Pult_Client
                         if ((_book[i].patrons[j].Name.Contains(name)) && (_book[i].patrons[j].CardNumber.Contains(number)))
                         {
                             //Console.WriteLine("itt vagyok2");
-                            _patron.Add(_book[i].patrons[j]);
+                            _patron.Add(new PatronWithTitle(_book[i].patrons[j].Name, _book[i].patrons[j].CardNumber, _book[i].Title,  _book[i].patrons[j].ReturnDate));
                         }
                     }
                     Console.WriteLine("------------------");

@@ -19,14 +19,14 @@
                     <ColumnDefinition Width="600*"/>
                     <ColumnDefinition Width="600*"/>
                 </Grid.ColumnDefinitions>
-                <TextBox Height="36" HorizontalAlignment="Center" Margin="0,0,0,5" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Lucida Console" FontSize="22" Width="317"  Background="#253031" Foreground="#C6E0FF" x:Name="NameTextBox" TextAlignment="Center">
+                <TextBox Height="36" HorizontalAlignment="Center" Margin="0,0,0,5" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Lucida Console" FontSize="22" Width="317"  Background="#253031" Foreground="#C6E0FF" x:Name="NameTextBox" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <TextBox Height="36" HorizontalAlignment="Center" Margin="0,0,0,5" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Lucida Console" FontSize="22" Width="317" Grid.Column="1" Background="#253031" Foreground="#C6E0FF" x:Name="CardNOTextBox" TextAlignment="Center">
+                <TextBox Height="36" HorizontalAlignment="Center" Margin="0,0,0,5" TextWrapping="Wrap" VerticalAlignment="Bottom" FontFamily="Lucida Console" FontSize="22" Width="317" Grid.Column="1" Background="#253031" Foreground="#C6E0FF" x:Name="CardNOTextBox" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
