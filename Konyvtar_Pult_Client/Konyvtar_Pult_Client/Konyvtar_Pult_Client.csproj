@@ -62,6 +62,9 @@
     <Compile Include="AddBookWindow.xaml.cs">
       <DependentUpon>AddBookWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExpiredWindow.xaml.cs">
+      <DependentUpon>ExpiredWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\PatronWithTitle.cs" />
     <Compile Include="SearchForBooksWindow.xaml.cs">
       <DependentUpon>SearchForBooksWindow.xaml</DependentUpon>
@@ -73,6 +76,10 @@
       <DependentUpon>UpdateBookWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AddBookWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExpiredWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

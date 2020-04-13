@@ -68,6 +68,7 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Label Content="Marked with * are necessary." HorizontalAlignment="Left" Margin="1,227,0,0" Grid.Row="4" VerticalAlignment="Top" Foreground="#FFC6E0FF" FontSize="16"/>
 
     </Grid>
 </Window>

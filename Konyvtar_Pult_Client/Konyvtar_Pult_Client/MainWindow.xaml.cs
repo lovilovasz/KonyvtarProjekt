@@ -27,6 +27,12 @@ namespace Konyvtar_Pult_Client
         public MainWindow()
         {
             InitializeComponent();
+            var expired = Expired();
+            if(expired != null)
+            {
+                var window = new ExpiredWindow(expired);
+                window.ShowDialog();
+            }
         }
 
         private void SearcForBooks_Click(object sender, RoutedEventArgs e)
@@ -48,6 +54,30 @@ namespace Konyvtar_Pult_Client
         {
             var window = new AddBookWindow();
             window.ShowDialog();
+        }
+
+        public List<PatronWithTitle> Expired()
+        {
+            List<PatronWithTitle> patron = new List<PatronWithTitle>();
+            IList<Book> book = DataProviders.BookDataProvider.GetBooks();
+            for (int i = 0; i < book.Count; i++)
+            {
+                for (int j = 0; j < book[i].patrons.Count; j++)
+                {
+                   if (DateTime.Now > book[i].patrons[j].ReturnDate.AddDays(5))
+                    {
+                        patron.Add(new PatronWithTitle (book[i].patrons[j].Name, book[i].patrons[j].CardNumber, book[i].Title, book[i].patrons[j].ReturnDate));
+                    }
+                }
+            }
+            if (patron.Count > 0)
+            {
+                return patron;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

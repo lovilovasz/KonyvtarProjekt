@@ -10,15 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\Egyetem\C#-os szoftverfejlesztés\KonyvtarProjekt\Konyvtar_Pult_Client\Konyvtar_Pult_Client\App.xaml
-5-392729251
+61671368458
 
-<<<<<<< HEAD
-11-2100637424
-=======
-13309426447
->>>>>>> Search-for-patrons-branch
+141772195800
 15-594168309
-AddBookWindow.xaml;MainWindow.xaml;SearchForBooksWindow.xaml;SearchForPatrons.xaml;UpdateBookWindow.xaml;
+AddBookWindow.xaml;ExpiredWindow.xaml;MainWindow.xaml;SearchForBooksWindow.xaml;SearchForPatrons.xaml;UpdateBookWindow.xaml;
 
-True
+False
 

@@ -31,7 +31,7 @@ namespace Konyvtar_Pult_Client
             Book book = new Book();
             if(TitleTextBox.Text.Equals("") || QuantityTextBox.Text.Equals("") || ReplacementCostTextBox.Text.Equals(""))
             {
-                MessageBox.Show("Fill in the necesary boxes!", "Marked with '*'.", MessageBoxButton.OK);
+                MessageBox.Show("Marked with '*'.", "Fill in the necessary boxes!", MessageBoxButton.OK);
             }
             else
             {
@@ -49,9 +49,15 @@ namespace Konyvtar_Pult_Client
                 book.Quantity = int.Parse(QuantityTextBox.Text);
                 book.ReplacementCost = int.Parse(ReplacementCostTextBox.Text);
                 book.patrons = _patron;
+                BookDataProvider.CreateBook(book);
+                TitleTextBox.Text = "";
+                AuthorTextBox.Text = "";
+                AQTextBox.Text = "";
+                QuantityTextBox.Text = "";
+                ReplacementCostTextBox.Text = "";
             }
-            BookDataProvider.CreateBook(book);
-            Close();
+            
+           
         }
     }
 }
