@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Konyvtar_Pult_Client"
         mc:Ignorable="d"
-        Title="SearchForBooksWindow" Height="607" Width="1200">
+        Title="SearchForBooksWindow" Height="607" Width="1210">
     <Grid Background="#FF315659">
         <Grid HorizontalAlignment="Left" Height="561" VerticalAlignment="Top" Width="1194">
             <Grid.RowDefinitions>

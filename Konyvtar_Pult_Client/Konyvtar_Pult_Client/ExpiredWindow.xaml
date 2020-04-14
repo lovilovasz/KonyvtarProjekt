@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Konyvtar_Pult_Client"
         mc:Ignorable="d"
-       Title="SearchForPatrons" Height="607" Width="1208">
+       Title="SearchForPatrons" Height="607" Width="1215">
     <Grid Background="#FF315659">
         <Grid HorizontalAlignment="Right" Height="561" VerticalAlignment="Top" Width="1204" Margin="-10,0,0,0">
             <Grid.RowDefinitions>

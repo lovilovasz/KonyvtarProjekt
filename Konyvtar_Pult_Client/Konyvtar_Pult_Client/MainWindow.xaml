@@ -44,6 +44,15 @@
                 </Button.Resources>
             </Button>
         </Grid>
+        <Grid HorizontalAlignment="Left" Height="150" Margin="1044,411,0,0" VerticalAlignment="Top" Width="140">
+            <Button x:Name="Help" Content="?" HorizontalAlignment="Center" Margin="70,80,10,10" FontFamily="Lucida Console" FontSize="28" Background="#FF253031" Foreground="#FFC6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" FontWeight="Bold" Click="Help_Click" Width="60" Height="60">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
 
     </Grid>
 </Window>

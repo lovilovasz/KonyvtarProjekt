@@ -81,6 +81,9 @@ namespace Konyvtar_Pult_Client
             }
         }
 
-        
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://web.unideb.hu/~lovaszkristof/UserManual/");
+        }
     }
 }

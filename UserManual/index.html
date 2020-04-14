@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Használati útmutató</title>
+</head>
+<body>
+    <section id="wholeContainer">
+        <header class="header"></header>
+        <section class="core">  
+            <nav class="navigation">
+                <ul class="ulist">
+                    <li>Kezdő ablak:
+                        <ol class="olist">
+                            <li><a href="#Sfb">Search for books</a>
+                                <ol>
+                                    <li><a href="#S1">Search</a></li>
+                                    <li><a href="#U">Update</a></li>
+                                    <li><a href="#D">Delete</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#Sfp">Search for patrons</a>
+                                <ol>
+                                    <li><a href="#S2">Search</a></li>
+                                    <li><a href="#D1">Delete</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#Ab">Add books</a>
+                                <ol>
+                                    <li><a href="#A">Add book</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#El">Expired loans</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>        
+            <main class="documentation">
+                <h2 class="headers" id="Sfb">Search for books ablak</h2>
+                <section class="content">
+                    <p>Ha a "Search for books" gombra kattintott akkor a következő ablakot fogja látni:</p>
+                    <img src="SearchForBooks.PNG" alt="" class="kepernyoKepek">
+                    <p>Ebben az ablakba ön keresni tud a könyvek között, cím és szerző alapján. Nem fontos pontosan beírni a címet vagy a szerző
+                        nevét elég ha egy kis részletet begépelnek belőle, viszont az ékezetekre figyelni kell.
+                    </p>
+                    <h3 class="headers" id="S1">Search gomb</h3>
+                    <p>Erre a gomra kattintva a "Title" és az "Author" mezőkbe begépelt címek és/vagy szerzők alapján a program kilistázza a kritériumoknak
+                        megfelelő könyveket (természetesen ha szerepelnek a nyilvántartásban). A listázás után rá lehet kattintani a kívánt könyvre.
+                        Ha rákattintottunk akkor kiválasztottuk a többi közül és további műveleteket tudunk rajta végezni. 
+                    </p>
+                    <h3 class="headers" id="U">Update gomb</h3>
+                    <p>Az "Update" gombra kattintva a következő ablak ugrik fel:</p>
+                    <img src="UpdateWindow.PNG" alt="" class="kepernyoKepek">
+                    <p>A könyv különböz adatait láthatjuk a képernyőn ezeket szabadon átírhatjuk ha ez éppen indokolt (figyelni kell az adatok helyes bevitelére).
+                        Ezen kívül képesek vagyunk embereket hozzárendelni a könyvekhez. Erre akkor van szükség ha valaki ki akarja bérelni.<br> NAGYON FONTOS!!, hogy 
+                        a kliens nevét pontosan írjuk be a rendszerbe és a kártyaszámát is(pl.: ne legyenek benne extra szóközök). A dátum magától kitöltődik az aznapi 
+                        naptól számítva 20 napra. <br>
+                        Továbbá itt tudjuk megtekinteni azon személyek listáját akik ezt a könyvet bérlik éppen. <br>
+                        Majd az "Update" gomra kattintva ezeket a változásokat menteni tudjuk.
+                    </p>
+                    <h3 class="headers" id="D">Delete gomb</h3>
+                    <p>Ezt a gombot használva törölni tudjuk a nyilvántartásban szereplő köbyvet.</p>
+                </section>
+                <h2 class="headers" id="Sfp">Search for patrons</h2>
+                <section class="content">
+                    <p>Ha a "Search for patrons" gombra kattintott akkor a következő ablakot fogja látni:</p>
+                    <img src="SearchForPatronsWindow.PNG" alt="" class="kepernyoKepek">
+                    <h3 class="headers" id="S2">Search gomb</h3>
+                    <p>A "Search" gombra kattintva a begépelt adatok alapján a program kilistázza a talált személyeket. <br>
+                       NAGYON FONTOS!! a név és kártyaszám adatokat pontosan írják be különben a program nem fogja megtalálni a 
+                       személyt vagy esetleg rossz személyt talál meg. <br>
+                       Majd a listázott személyek közül lehet választani, majd törölni ha a könyvet visszahozta.
+                    </p>
+                    <h3 class="headers" id="D1">Delete Gomb</h3>
+                    <p>A "Delete" gomb megnyomásával törölni lehet a személy kölcsönzését. Figyeljen oda, hogy a kó könyv kölcsönzését 
+                        törölje.
+                    </p>
+                </section>
+                <h2 class="headers" id="Ab">Add books</h2>
+                <section class="content"> 
+                    <p>Az "Add books" gombra kattintva a következő ablakot fogja látni:</p>
+                    <img src="AddBookWindow.PNG" alt="" class="kepernyoKepek">
+                    <p>Ezen a felületen lehet könyveket felvenni a nyilvántartásba. Figyeljen oda arra, hogy az adatokat pontosan adja meg ha lehet.
+                        Természetesen ezeket később javíthatja. <br> (Search for books ==> (select the book) ==> Update ==> (javítsa ki a hibát) ==>Update) <br>
+                        Akkor tud könyvet felvenni a nyilvántartásba ha annak megadta legalább a címét, a rendelkezésre álló mennyiségét és az árát.
+                        Ezeket csillaggal(*) jelöltem a programban.
+                    </p>
+                    <h3 class="headers" id="A">Add book</h3>
+                    <p>Ezzel a gombbal adhatja hozzá az új könyvet az adatbázishoz. Mielőtt hozzáadná győződjön meg arról, hogy nincs-e már benne 
+                        a nyilvántartásban a könyv.
+                    </p>
+                </section>
+                <h2 class="headers" id="El">Expired loans</h2>
+                <section class="content">
+                    <p>Erre a gombra kattintva ezt az ablakot fogja látni:</p>
+                    <img src="ExpireLoansWindow.PNG" alt="" class="kepernyoKepek">
+                    <p>Ebben a listában lehet látni azoknak az embereknek a listáját akiknek lejárt a kikölcsönzéstől 
+                        számított 20 nap és még mindig nem hozták vissza a könyveket.
+                    </p>
+                </section>
+            </main>
+        </section>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
