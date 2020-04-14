@@ -8,11 +8,12 @@
         Title="MainWindow" Height="600" Width="1200">
     <Grid Background="#315659">
         <Label Content="BIBLIOTÉKA" FontSize="80" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0"  FontFamily="Lucida Console" FontStretch="Expanded" Foreground="#FFC6E0FF" FontWeight="Bold"/>
-        <Grid HorizontalAlignment="Center" Height="236" Margin="0,100,0,0" VerticalAlignment="Center" Width="455">
+        <Grid HorizontalAlignment="Center" Height="315" Margin="370,218,370,38" VerticalAlignment="Center" Width="454">
             <Grid.RowDefinitions>
-                <RowDefinition Height="80*"/>
-                <RowDefinition Height="80*"/>
-                <RowDefinition Height="80*"/>
+                <RowDefinition Height="79"/>
+                <RowDefinition Height="79"/>
+                <RowDefinition Height="78"/>
+                <RowDefinition Height="79"/>
             </Grid.RowDefinitions>
             <Button x:Name="SearcForBooks" Content="Search for books" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="420" Height="60" Background="#FF253031" Foreground="#FFC6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" Click="SearcForBooks_Click">
                 <Button.Resources>
@@ -29,6 +30,13 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="AddBooks" Content="Add books" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="300" Height="60" Background="#FF253031" Foreground="#FFC6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" Grid.Row="2" Click="AddBooks_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="ExpiredLoans" Content="Expired loans" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontFamily="Lucida Console" FontSize="28" Width="300" Height="60" Background="#FF253031" Foreground="#FFC6E0FF" RenderTransformOrigin="0.5,0.5" Padding="10" Grid.Row="3" Click="ExpiredLoans_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>

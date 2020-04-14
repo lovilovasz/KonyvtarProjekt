@@ -27,12 +27,6 @@ namespace Konyvtar_Pult_Client
         public MainWindow()
         {
             InitializeComponent();
-            var expired = Expired();
-            if(expired != null)
-            {
-                var window = new ExpiredWindow(expired);
-                window.ShowDialog();
-            }
         }
 
         private void SearcForBooks_Click(object sender, RoutedEventArgs e)
@@ -53,6 +47,13 @@ namespace Konyvtar_Pult_Client
         private void AddBooks_Click(object sender, RoutedEventArgs e)
         {
             var window = new AddBookWindow();
+            window.ShowDialog();
+        }
+
+        private void ExpiredLoans_Click(object sender, RoutedEventArgs e)
+        {
+            var expired = Expired();
+            var window = new ExpiredWindow(expired);
             window.ShowDialog();
         }
 
@@ -79,5 +80,7 @@ namespace Konyvtar_Pult_Client
                 return null;
             }
         }
+
+        
     }
 }
