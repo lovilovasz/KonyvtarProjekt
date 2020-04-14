@@ -1,0 +1,72 @@
+.header {
+    height: 100px;
+    background-image: url(kep.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #C6E0FF;
+    padding-top: 4vw;
+    text-align: center;
+}
+#wholeContainer {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerIras {
+    margin: 0px;
+    padding-left: 20vw;
+    font-size: 40px;
+    color: yellow;
+    font-weight: 900;
+}
+.navigation {
+    width: 19vw;
+    background-color: #253031;
+    color: #C6E0FF;
+    font-size: 1.6vw;
+    padding-bottom: 0px;
+   
+}
+.ulist {
+    margin-top: 0vw;
+    padding-left: 2vw;
+    padding-top: 10px;
+    position: fixed;
+}
+.olist {
+    padding-left: 1vw;
+    padding-bottom: 3px;
+}
+.documentation{
+    background-color: #315659;
+    width: 100%;
+    padding-left: 1vw;
+    color: #C6E0FF;
+    
+}
+.core {
+    display: flex;
+    
+}
+.content {
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    padding-right: 2vw;
+}
+p {
+    margin: 0px;
+}
+.kepernyoKepek {
+    width: 70vw;
+    border: solid thin;
+}
+.headers {
+    font-size: 2vw;
+}
+a{
+    color: #C6E0FF;
+}
+#Sfp {
+    
+}

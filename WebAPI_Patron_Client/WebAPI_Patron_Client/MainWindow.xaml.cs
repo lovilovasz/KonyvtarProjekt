@@ -39,5 +39,10 @@ namespace WebAPI_Patron_Client
             var window = new SearchForPatrons();
             window.ShowDialog();
         }
+
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://web.unideb.hu/~lovaszkristof/UserManualPatron/");
+        }
     }
 }
