@@ -79,38 +79,48 @@ namespace Konyvtar_Pult_Client
             List<PatronWithTitle> _patron = new List<PatronWithTitle>();
             string name = NameTextBox.Text;
             string number = CardNOTextBox.Text;
-            Console.WriteLine("Books: " + _book.Count);
-            if(name.Equals("") && number.Equals(""))
+            var spf = new CheckName();
+            var result = spf.CheckNameTest(name);
+            if(result == true)
             {
-                MessageBox.Show("You need to type in the Name and the card number to search!", "", MessageBoxButton.OK);
-            }else if(!name.Equals("") && !number.Equals(""))
-            {
-                //Console.WriteLine("itt vagyok");
-                for (int i = 0; i < _book.Count; i++)
+                Console.WriteLine("Books: " + _book.Count);
+                if (name.Equals("") && number.Equals(""))
                 {
-                    for (int j = 0; j < _book[i].patrons.Count; j++)
-                    {
-                        Console.WriteLine(name + " " + number);
-                        Console.WriteLine(_book[i].patrons[j].Name + " " + _book[i].patrons[j].CardNumber);
-                        if ((_book[i].patrons[j].Name.Contains(name)) && (_book[i].patrons[j].CardNumber.Contains(number)))
-                        {
-                            //Console.WriteLine("itt vagyok2");
-                            _patron.Add(new PatronWithTitle(_book[i].patrons[j].Name, _book[i].patrons[j].CardNumber, _book[i].Title,  _book[i].patrons[j].ReturnDate));
-                        }
-                    }
-                    Console.WriteLine("------------------");
+                    MessageBox.Show("You need to type in the Name and the card number to search!", "", MessageBoxButton.OK);
                 }
+                else if (!name.Equals("") && !number.Equals(""))
+                {
+                    //Console.WriteLine("itt vagyok");
+                    for (int i = 0; i < _book.Count; i++)
+                    {
+                        for (int j = 0; j < _book[i].patrons.Count; j++)
+                        {
+                            Console.WriteLine(name + " " + number);
+                            Console.WriteLine(_book[i].patrons[j].Name + " " + _book[i].patrons[j].CardNumber);
+                            if ((_book[i].patrons[j].Name.Contains(name)) && (_book[i].patrons[j].CardNumber.Contains(number)))
+                            {
+                                //Console.WriteLine("itt vagyok2");
+                                _patron.Add(new PatronWithTitle(_book[i].patrons[j].Name, _book[i].patrons[j].CardNumber, _book[i].Title, _book[i].patrons[j].ReturnDate));
+                            }
+                        }
+                        Console.WriteLine("------------------");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("You need to type in both the Name and card number!", "", MessageBoxButton.OK);
+                }
+                Console.WriteLine(_patron.Count);
+                StringBuilder sb = new StringBuilder();
+                PatronListBox.ItemsSource = "";
+                PatronListBox.ItemsSource = _patron;
             }
             else
             {
-                MessageBox.Show("You need to type in both the Name and card number!", "", MessageBoxButton.OK);
+                MessageBox.Show("The name can not contain different characters then letters.", "", MessageBoxButton.OK);
             }
-            Console.WriteLine(_patron.Count);
-            StringBuilder sb = new StringBuilder();
-            PatronListBox.ItemsSource = "";
-            PatronListBox.ItemsSource = _patron;
+           
         }
-
 
     }
 }
